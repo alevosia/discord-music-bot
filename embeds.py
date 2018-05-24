@@ -9,6 +9,8 @@ async def SendHelp(ctx):
     embed.add_field(name='queue', value='sends the list of songs in the queue', inline=False)
     embed.add_field(name='skip', value='skips the currently playing song', inline=False)
     embed.add_field(name='remove', value='removes a song in the queue using its position in the queue', inline=False)
+    embed.add_field(name='volume', value='sets the volume of the song | 0 to 3.0', inline=False)
+    embed.add_field(name='mute', value='mutes the song while it plays', inline=False)
     embed.add_field(name='loopsong', value='loops the currently playing song', inline=False)
     embed.add_field(name='loopqueue', value='loops the whole queue', inline=False)
     embed.add_field(name='disconnect', value='makes me leave the music voice channel', inline=False)
