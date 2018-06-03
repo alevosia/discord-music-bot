@@ -32,3 +32,5 @@
 * youtube_dl
 * requests
 * isodate
+
+`Author: Alexander Mariñas`
