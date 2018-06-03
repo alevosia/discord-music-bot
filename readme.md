@@ -4,8 +4,8 @@
 * Clone the repository  
 * Create a [Discord](https://discordapp.com/) account
 * Go to User Settings -> Appearance and enable Developer Mode
-* Create a Discord server then copy your Server's ID by right-clicking the server name on the upper left and keep it for later user
-* Copy your USER ID by typing \\ and mentioning/tagging yourself after it. Only get the numbers. 
+* Create a Discord server then copy your Server's ID by right-clicking the server name on the upper left and keep it for later use
+* Copy your USER ID by typing \\ and mentioning/tagging yourself using @<name\> after it. Only get the numbers. 
 * Create text channel to be used solely for spamming the music commands then copy the channel's ID using right-click again and keep it for later  
 * Create a voice channel for the bot to connect into then copy its channel ID as well  
 * [Create an application on Discord](https://discordapp.com/developers/applications/me)  
@@ -33,4 +33,4 @@
 * requests
 * isodate
 
-`Author: Alexander Mariñas`
+`Author: Alexander Mariï¿½as`
