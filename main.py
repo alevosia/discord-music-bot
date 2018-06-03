@@ -17,20 +17,23 @@ Bot.remove_command('help')
 
 Player = classes.Player()
 
-# when the is up and running
+
 @Bot.event
 async def on_ready():
+    '''Executes when the is up and running'''
     musicSpamChannel = Bot.get_channel(config.MusicSpamChannelID)
     print('{} reporting for duty!'.format(Bot.user.display_name))
     await musicSpamChannel.send('{} reporting for duty!'.format(Bot.user.display_name))
 
 @Bot.event
 async def on_command_error(ctx, exception):
+    '''Prints the command exception to the console'''
     print(exception)
     #await ctx.send(exception)
 
 @Bot.check
 async def IsOnMusicSpamChannel(ctx):
+    '''A global check which checks if the command is used in the proper channel'''
     if ctx.message.channel.id == config.MusicSpamChannelID:
         return True
     else:
@@ -50,62 +53,71 @@ async def say(ctx, *, message):
 
 @Bot.command()
 async def join(ctx):
-    '''invites the bot to join the music voice channel'''
+    '''Invites the bot to join the music voice channel'''
     await functions.JoinVoiceChannel(Bot, Player, ctx.message)
 
 @Bot.command()
 async def disconnect(ctx):
-    '''disconnects the bot from the music voice channel'''
+    '''Disconnects the bot from the music voice channel'''
     await functions.DisconnectVoiceChannel(Player, ctx.message)
 
 @Bot.command()
 async def play(ctx):
-    '''plays a song using its title or youtube url'''
+    '''Plays a song using its title or youtube url'''
     await functions.PlayMusic(Bot, Player, ctx.message)
 
 @Bot.command()
 async def search(ctx):
-    '''search a song using its title then sends a list of songs'''
-    await functions.SearchMusic(Bot, ctx.message, Player)
-
+    '''Search a song using its title then sends a list of songs'''
+    await functions.SearchMusic(Bot, Player, ctx.Message)
 @Bot.command()
 async def queue(ctx):
+    '''Sends the list of songs in the queue'''
     await embeds.SendQueue(Bot, Player.Queue, ctx.message)
 
 @Bot.command()
 async def skip(ctx):
+    '''Skips the currently playing song'''
     await functions.SkipSong(Player, ctx.message)
 
 @Bot.command()
 async def pause(ctx):
+    '''Pauses the currently playing song'''
     await functions.PauseSong(Player, ctx.message)
 
 @Bot.command()
 async def resume(ctx):
+    '''Resumes the currently playing if paused'''
     await functions.ResumeSong(Player, ctx.message)
 
 @Bot.command()
 async def remove(ctx):
+    '''Removes a song using its position in the queue'''
     await functions.RemoveSong(Player, ctx.message)
 
 @Bot.command()
 async def volume(ctx):
+    '''Sets the volume of the player'''
     await functions.SetVolume(Player, ctx.message)
 
 @Bot.command()
 async def mute(ctx):
+    '''Mutes the volume of the player'''
     await functions.Mute(Player, ctx.message)
 
 @Bot.command()
 async def unmute(ctx):
+    '''Unmutes the volume of the player if muted'''
     await functions.Unmute(Player, ctx.message)
 
 @Bot.command()
 async def loopsong(ctx):
+    '''Loops the currently playing song'''
     await functions.SetLoopSong(Player, ctx.message)
 
 @Bot.command()
 async def loopqueue(ctx):
+    '''Loops the whole queue which adds all finished songs back to the end of the queue'''
     await functions.SetLoopQueue(Player, ctx.message)
 
 @Bot.command()

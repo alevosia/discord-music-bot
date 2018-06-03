@@ -18,6 +18,7 @@ class Song:
         self.imageURL = songImageURL
         self.queuer = queuerObject
 
+# the queue to append all the songs queued by the users
 class Queue:
     def __init__(self):
         self.songs = []
@@ -26,28 +27,32 @@ class Queue:
         self.isLoopingQueue = False
 
     def AddSong(self, Song):
-        '''adds a song to the end of the queue'''
+        '''Adds a song to the end of the queue'''
         self.songs.append(Song)
         self.totalDuration += int(Song.duration.total_seconds())
 
     def RemoveSong(self, position):
-        '''removes a song from the queue using it position'''
+        '''Removes a song from the queue using it position'''
         self.totalDuration -= int(self.songs[position-1].duration.total_seconds())
         return self.songs.pop(position-1)
         
     def SetLoopSong(self):
+        '''Enables/disables the looping of currently playing song'''
         self.isLoopingSong = not self.isLoopingSong
 
     def SetLoopQueue(self):
+        '''Enables/disables the looping of the whole queue'''
         self.isLoopingQueue = not self.isLoopingQueue
 
     def size(self):
-        '''returns the number of songs in the queue'''
+        '''Returns the number of songs in the queue'''
         return len(self.songs)
 
     def Clear(self):
+        '''Clears the songs in the queue'''
         self.songs = []
 
+# the controller of the queue
 class Player:
     def __init__(self):
         self.voice = None
