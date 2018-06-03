@@ -3,10 +3,10 @@
 ##Setting it up:  
 * Clone the repository  
 * Create a [Discord](https://discordapp.com/) account
-* Go to User Settings -> Appearance and Enable 
-* Create a Discord server then copy your Server's ID and keep it for later user
+* Go to User Settings -> Appearance and enable Developer Mode
+* Create a Discord server then copy your Server's ID by right-clicking the server name and keep it for later user
 * Copy your USER ID by typing \\ and mentioning/tagging yourself after it. Only get the numbers. 
-* Create text channel to be used solely for spamming the music commands then copy the channel's ID and keep it for later  
+* Create text channel to be used solely for spamming the music commands then copy the channel's ID using right-click again and keep it for later  
 * Create a voice channel for the bot to connect into then copy its channel ID as well  
 * Copy your USER ID by typing \\ and mentioning/tagging yourself after it. Only get the numbers.  
 * [Create an application on Discord](https://discordapp.com/developers/applications/me)  
