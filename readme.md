@@ -1,4 +1,5 @@
 #Haven the Discord Music Bot
+![Haven](https://bitbucket.org/alexanderpaul/havens-music-rewrite/raw/ea910c837e4c1181e3578fd4ee12675f833beb27/haven.jpg)
 
 ##Setting it up:  
 * Clone the repository  
