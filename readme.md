@@ -20,7 +20,7 @@
     * Connect
     * Speak
     * Use Voice Activity
-* When you're done ticking the permissions, copy the generated url above and paste it on your browser and select the server you want the bot to join into  
+* When you're done ticking the permissions, copy the generated url above it and paste it on your browser and select the server you want the bot to join into  
 * Go to your freshly stolen repo and enter the necessary token and ID's you've copied to their correct variables
 * Open a terminal and go to your repos directory and run ```python main.py``` and the bot should go online and send a message on the spam channel
 * Use !help on the music spam channel you've created for a list of commands 
