@@ -1,13 +1,12 @@
 TOKEN = 'NDQ0NTA0NjI5MDAzNDE5NjU4.DeauIg.xztERXdhIVoz5uL1f1nsHphcDpI'
 OwnerID = 374447686319079425
-BotResetPassword = '__\\_****\\*REBOOT\\*****\\___'
 YoutubeAPIKey = 'AIzaSyBhYruEtZeGsYQJly4sdUgwTr0HSmcPpqQ'
 prefix = '!'
 description = 'A music bot for Unforsaken Haven\'s Discord server.'
 
-ServerID = 444414368646561792
-MusicSpamChannelID = 444414598284836895
-MusicVoiceChannelID = 444414535315619850
+ServerID = 451668403342802954
+MusicSpamChannelID = 451719192391974912
+MusicVoiceChannelID = 451668482694709259
 
 SearchTimeOut = 30
 MaxSearchResults = 5
