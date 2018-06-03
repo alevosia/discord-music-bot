@@ -8,7 +8,6 @@
 * Copy your USER ID by typing \\ and mentioning/tagging yourself after it. Only get the numbers. 
 * Create text channel to be used solely for spamming the music commands then copy the channel's ID using right-click again and keep it for later  
 * Create a voice channel for the bot to connect into then copy its channel ID as well  
-* Copy your USER ID by typing \\ and mentioning/tagging yourself after it. Only get the numbers.  
 * [Create an application on Discord](https://discordapp.com/developers/applications/me)  
 * Scroll down to Bot section and click Create a Bot User  
 * In the Bot section, beside the "Token" click the "click to reveal" and copy and paste it for later   
@@ -21,11 +20,11 @@
     * Connect
     * Speak
     * Use Voice Activity
-* When you're done ticking the permissions, copy the generated url above and paste it on your browser  
-* Select the server you want the bot to join into  
-* Go to your freshly stolen repo and enter the necessary token and ID's you've copied to their necessary variables
+* When you're done ticking the permissions, copy the generated url above and paste it on your browser and select the server you want the bot to join into  
+* Go to your freshly stolen repo and enter the necessary token and ID's you've copied to their correct variables
 * Open a terminal and go to your repos directory and run ```python main.py``` and the bot should go online and send a message on the spam channel
-* Use !help for a list of commands. You may configure a custom prefix in the config.py
+* Use !help on the music spam channel you've created for a list of commands 
+* You may configure a custom prefix in the config.py
 
 ## Dependencies
 * discord.py rewrite w/ voice - ```pip install -U git+https://github.com/Rapptz/discord.py@rewrite#egg=discord.py[voice]```
