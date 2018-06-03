@@ -4,7 +4,7 @@
 * Clone the repository  
 * Create a [Discord](https://discordapp.com/) account
 * Go to User Settings -> Appearance and enable Developer Mode
-* Create a Discord server then copy your Server's ID by right-clicking the server name and keep it for later user
+* Create a Discord server then copy your Server's ID by right-clicking the server name on the upper left and keep it for later user
 * Copy your USER ID by typing \\ and mentioning/tagging yourself after it. Only get the numbers. 
 * Create text channel to be used solely for spamming the music commands then copy the channel's ID using right-click again and keep it for later  
 * Create a voice channel for the bot to connect into then copy its channel ID as well  
@@ -12,7 +12,7 @@
 * Scroll down to Bot section and click Create a Bot User  
 * In the Bot section, beside the "Token" click the "click to reveal" and copy and paste it for later   
 * Scroll up and below the "OAUTH2 URL GENERATOR", click "GENERATE OAuth URL"  
-* On Bot Permissions, make sure to give the tick the necessary permissions for the bot to work properly such as:  
+* On Bot Permissions, make sure to tick the necessary permissions for the bot to work properly such as:  
     * View Channels
     * Send Messages
     * Embed Links
@@ -33,4 +33,4 @@
 * requests
 * isodate
 
-`Author: Alexander MariÃ±as`
+`Author: Alexander Mariñas`
