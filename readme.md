@@ -1,8 +1,18 @@
 #Haven the Discord Music Bot
-![Haven](https://bitbucket.org/alexanderpaul/havens-music-rewrite/raw/ea910c837e4c1181e3578fd4ee12675f833beb27/haven.jpg)
+![Haven](https://bitbucket.org/alexanderpaul/marinas-utility-music/raw/cade778b68c69033d66f5b59980c95006d3357f7/haven.jpg)
+
+## Dependencies
+* discord.py rewrite w/ voice - ```pip install -U git+https://github.com/Rapptz/discord.py@rewrite#egg=discord.py[voice]```
+* a lower version of yarl - ```pip install "yarl<1.2"```
+* libopus - ```pip install opuslib```
+* [ffmpeg](https://www.ffmpeg.org/download.html) - installed on your computer and set to path
+* asyncio
+* youtube_dl
+* requests
+* isodate
 
 ##Setting it up:  
-* Clone the repository  
+* Clone/download the repository  
 * Create a [Discord](https://discordapp.com/) account
 * Go to User Settings -> Appearance and enable Developer Mode
 * Create a Discord server then copy your Server's ID by right-clicking the server name on the upper left and keep it for later use
@@ -22,16 +32,9 @@
     * Speak
     * Use Voice Activity
 * When you're done ticking the permissions, copy the generated url above it and paste it on your browser and select the server you want the bot to join into  
-* Go to your freshly stolen repo and enter the necessary token and ID's you've copied to their correct variables
+* Go to your freshly stolen repo and enter the necessary token and ID's you've copied to their correct variables on the config.py file
 * Open a terminal and go to your repos directory and run ```python main.py``` and the bot should go online and send a message on the spam channel
 * Use !help on the music spam channel you've created for a list of commands 
 * You may configure a custom prefix in the config.py
 
-## Dependencies
-* discord.py rewrite w/ voice - ```pip install -U git+https://github.com/Rapptz/discord.py@rewrite#egg=discord.py[voice]```
-* asyncio
-* youtube_dl
-* requests
-* isodate
-
-`Author: Alexander Mari�as`
+`Author: Alexander Marinas`

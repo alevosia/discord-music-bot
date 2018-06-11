@@ -9,7 +9,10 @@ import embeds
 
 logging.basicConfig(level=logging.INFO)
 from discord.ext import commands
-discord.opus.load_opus('libopus')
+try:
+    discord.opus.load_opus('libopus-0.x64.dll')
+except:
+    discord.opus.load_opus('libopus-0.x86.dll')
 
 Bot = commands.Bot(command_prefix=config.prefix, description=config.description)
 Bot.owner_id = config.OwnerID
@@ -69,7 +72,7 @@ async def play(ctx):
 @Bot.command()
 async def search(ctx):
     '''Search a song using its title then sends a list of songs'''
-    await functions.SearchMusic(Bot, Player, ctx.Message)
+    await functions.SearchMusic(Bot, Player, ctx.message)
 @Bot.command()
 async def queue(ctx):
     '''Sends the list of songs in the queue'''

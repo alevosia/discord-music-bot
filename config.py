@@ -1,5 +1,5 @@
 # make sure to configure these for your own server
-TOKEN = 'NDQ0NTA0NjI5MDAzNDE5NjU4.DeauIg.xztERXdhIVoz5uL1f1nsHphcDpI'
+TOKEN = 'NDQ0NTA0NjI5MDAzNDE5NjU4.DfW7HQ.74LxfC0tjYCzjbQOltSgm1j10uk'
 OwnerID = 374447686319079425
 ServerID = 451668403342802954
 MusicSpamChannelID = 451719192391974912
