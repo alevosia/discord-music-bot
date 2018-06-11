@@ -1,17 +1,17 @@
 import discord
+from discord.ext import commands
 import logging
 # my modules
 import config
 import classes
 import functions
-import helpers
 import embeds
 
 logging.basicConfig(level=logging.INFO)
-from discord.ext import commands
+
 try:
     discord.opus.load_opus('libopus-0.x64.dll')
-except:
+except Exception:
     discord.opus.load_opus('libopus-0.x86.dll')
 
 Bot = commands.Bot(command_prefix=config.prefix, description=config.description)
