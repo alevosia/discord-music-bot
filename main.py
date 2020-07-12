@@ -46,12 +46,12 @@ async def IsOnMusicSpamChannel(ctx):
 # BOT COMMANDS =================================================================
 @Bot.command()
 async def help(ctx):
-    '''sends the list of commands'''
+    '''Sends the list of commands'''
     await embeds.SendHelp(ctx)
 
 @Bot.command()
 async def say(ctx, *, message):
-    '''makes the bot say something'''
+    '''Makes the bot say something'''
     await ctx.send(message)
 
 @Bot.command()
@@ -125,12 +125,12 @@ async def loopqueue(ctx):
 
 @Bot.command()
 async def rbt(ctx):
-    '''reboots the bot'''
+    '''Reboots the bot'''
     await functions.Reboot(Bot, Player, ctx.message)
 
 @Bot.command()
 async def ping(ctx):
-    '''sends the bot's ping in milli-seconds'''
+    '''Sends the bot's ping in milli-seconds'''
     await ctx.send('My ping is {}ms'.format(int(Bot.latency*1000)))
 
 # runs the bot if opus is loaded
