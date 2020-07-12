@@ -1,5 +1,7 @@
-#Haven the Discord Music Bot
-![Haven](https://bitbucket.org/alexanderpaul/marinas-utility-music/raw/cade778b68c69033d66f5b59980c95006d3357f7/haven.jpg)
+# Haven the Discord Music Bot
+<p align="center">
+    <img src="https://bitbucket.org/alexanderpaul/marinas-utility-music/raw/cade778b68c69033d66f5b59980c95006d3357f7/haven.jpg" width="350">
+</p>
 
 ## Dependencies
 * discord.py rewrite w/ voice - ```pip install -U git+https://github.com/Rapptz/discord.py@rewrite#egg=discord.py[voice]```
@@ -11,7 +13,7 @@
 * requests
 * isodate
 
-##Setting it up:  
+## Setting it up:  
 * Clone/download the repository  
 * Create a [Discord](https://discordapp.com/) account
 * Go to User Settings -> Appearance and enable Developer Mode
@@ -36,5 +38,3 @@
 * Open a terminal and go to your repos directory and run ```python main.py``` and the bot should go online and send a message on the spam channel
 * Use !help on the music spam channel you've created for a list of commands 
 * You may configure a custom prefix in the config.py
-
-`Author: Alexander Marinas`
